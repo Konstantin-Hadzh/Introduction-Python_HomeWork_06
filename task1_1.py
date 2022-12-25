@@ -1,8 +1,10 @@
 
 
-""" 2) Пользователь вводит время в секундах. Переведите время в часы, 
-минуты и секунды и выведите в формате чч:мм:сс. Используйте форматирование 
-строк """
+""" 
+1) Из ваших заданий в уроках 1-5 найти 2-3 скрипта, сделать замеры времени, 
+оптимизировать, вновь выполнить замеры и ОПИСАТЬ СЛОВАМИ, что вы сделали 
+и чего удалось добиться 
+"""
 
 from timeit import timeit
 
@@ -17,7 +19,7 @@ print(f'{clock}:{min}:{sec}')
 
 # код №2
 user_interval_sec2 = int(input("Введите значение интервала в секундах: ")) 
-time_format = str(datetime.timedelta(seconds = user_interval_sec2)) 
+time_format = str(datetime.timedelta(seconds = user_interval_sec2)) # класса timedelta() модуля datetime
 print(time_format)
 
 print(timeit("user_interval_sec1", globals=globals(), number=1000000000))
